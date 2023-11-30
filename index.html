@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video site</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bagel+Fat+One&family=Bowlby+One+SC&family=Inria+Serif&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Suez+One&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="logo"><img src="logo.png" alt=""></div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="video.html">Videos</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            <div class="burger-menu">&#9776;</div>
+        </nav>
+    </header>
+
+    <article class="article1">
+        <h1>En person med passion</h1>
+        <h2>"Jeg er passioneret omkring at forholde mig kritisk til det samfund jeg lever i"</h2>
+        <div class="video-container">
+            <video controls poster="thumbnailpassion.png">
+                <source src="Personmedassion.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+
+        </div>
+        <div class="custom_controls">
+            <button id="playPauseBtn">&#9658;</button>
+        </div>
+    </article>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>

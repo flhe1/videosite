@@ -1,0 +1,109 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #faf5dc;
+}
+
+h1 {
+  font-family: "Bowlby One SC", sans-serif;
+  margin-left: 23%;
+  font-size: 3.5rem;
+  color: #8e0000;
+}
+
+h2 {
+  font-family: "Suez One", serif;
+  margin-top: -20px;
+  margin-bottom: 80px;
+  margin-left: 16%;
+  color: rgb(57, 14, 14);
+}
+
+.article1 {
+  margin-top: 60px;
+}
+
+/*------------------------------ video -----------------------------*/
+
+.video-container {
+  position: relative;
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+video {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/*-------------------------------- MENU ----------------------------*/
+header {
+  background-color: #faf5dc;
+  color: #a60505;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "Bowlby One SC", sans-serif;
+}
+
+.logo {
+  margin-left: 40px;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li {
+  margin-right: 50px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #a60505;
+}
+
+.nav-links a:hover {
+  color: #4e0101;
+}
+
+.burger-menu {
+  display: none;
+  font-size: 1.5em;
+  cursor: pointer;
+}
+
+/* Media query for small screens */
+@media only screen and (max-width: 700px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    padding: 15px;
+    box-sizing: border-box;
+  }
+
+  .nav-links.show {
+    display: flex;
+  }
+
+  .burger-menu {
+    display: block;
+  }
+}
